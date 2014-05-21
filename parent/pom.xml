@@ -11,6 +11,7 @@
     <tycho-version>0.18.1</tycho-version>
     <tycho-extras-version>${tycho-version}</tycho-extras-version>
     <checkstyle-config>http://download.redhawksdr.org/redhawk-checkstyle/checkstyle.xml</checkstyle-config>
+    <testFailureIgnore>false</testFailureIgnore>
   </properties>
 
   <dependencies>
@@ -150,7 +151,7 @@
         <version>${tycho-version}</version>
         <configuration>
           <failIfNoTests>false</failIfNoTests>
-          <testFailureIgnore>true</testFailureIgnore>
+          <testFailureIgnore>${testFailureIgnore}</testFailureIgnore>
           <argLine>-Djava.endorsed.dirs=/usr/share/java/jacorb -Xmx512m -Djava.net.preferIPv4Stack=true -Dorg.omg.CORBA.ORBClass=org.jacorb.orb.ORB -Dorg.omg.CORBA.ORBSingletonClass=org.jacorb.orb.ORBSingleton -Dorg.omg.PortableInterceptor.ORBInitializerClass.standard_init=org.jacorb.orb.standardInterceptors.IORInterceptorInitializer</argLine>
           <appArgLine>-nl en</appArgLine>
           <dependencies>
@@ -220,6 +221,9 @@
   <profiles>
     <profile>
       <id>code-analysis</id>
+      <properties>
+        <testFailureIgnore>true</testFailureIgnore>
+      </properties>
       <build>
         <pluginManagement>
           <plugins>
