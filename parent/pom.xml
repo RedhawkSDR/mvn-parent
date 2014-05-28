@@ -178,7 +178,17 @@
         <version>${tycho-version}</version>
         <configuration>
           <deployableFeature>true</deployableFeature>
+          <sourceReferences>
+            <generate>true</generate>
+          </sourceReferences>
         </configuration>
+        <dependencies>
+          <dependency>
+            <groupId>org.eclipse.tycho.extras</groupId>
+            <artifactId>tycho-sourceref-jgit</artifactId>
+            <version>${tycho-extras-version}</version>
+          </dependency>
+        </dependencies>
       </plugin>
 
       <plugin>
