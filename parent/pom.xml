@@ -13,6 +13,8 @@
     <tycho-extras-version>${tycho-version}</tycho-extras-version>
     <checkstyle-config>http://download.redhawksdr.org/redhawk-checkstyle/checkstyle.xml</checkstyle-config>
     <testFailureIgnore>false</testFailureIgnore>
+    <org.eclipse.swtbot.playback.delay>250</org.eclipse.swtbot.playback.delay>
+    <test-argLine>-Dorg.eclipse.swtbot.playback.delay=${org.eclipse.swtbot.playback.delay} -Dorg.eclipse.swt.browser.DefaultType=mozilla -DORBInitialPort=2908 -XX:MaxPermSize=256m -Xmx1024m -Djava.net.preferIPv4Stack=true</test-argLine>
   </properties>
 
   <dependencies>
@@ -153,7 +155,7 @@
         <configuration>
           <failIfNoTests>false</failIfNoTests>
           <testFailureIgnore>${testFailureIgnore}</testFailureIgnore>
-          <argLine>-Djava.endorsed.dirs=/usr/share/java/jacorb -Xmx512m -Djava.net.preferIPv4Stack=true -Dorg.omg.CORBA.ORBClass=org.jacorb.orb.ORB -Dorg.omg.CORBA.ORBSingletonClass=org.jacorb.orb.ORBSingleton -Dorg.omg.PortableInterceptor.ORBInitializerClass.standard_init=org.jacorb.orb.standardInterceptors.IORInterceptorInitializer</argLine>
+          <argLine>${test-argLine}</argLine>
           <appArgLine>-nl en</appArgLine>
           <dependencies>
             <dependency>
