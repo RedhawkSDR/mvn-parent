@@ -178,7 +178,7 @@
           <bundleStartLevel>
             <bundle>
               <id>org.eclipse.equinox.ds</id>
-              <level>1</level>
+              <level>2</level>
               <autoStart>true</autoStart>
             </bundle>
           </bundleStartLevel>
