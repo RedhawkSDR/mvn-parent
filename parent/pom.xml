@@ -115,6 +115,7 @@
         </dependencies>
       </plugin>
 
+      <!-- https://wiki.eclipse.org/Tycho/Reference_Card#Source_Features -->
       <plugin>
         <groupId>org.eclipse.tycho</groupId>
         <artifactId>tycho-p2-plugin</artifactId>
