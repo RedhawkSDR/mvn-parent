@@ -23,7 +23,6 @@
     <tycho-version>0.20.0</tycho-version>
     <tycho-extras-version>${tycho-version}</tycho-extras-version>
     <checkstyle-config>http://download.redhawksdr.org/redhawk-checkstyle/checkstyle.xml</checkstyle-config>
-    <testFailureIgnore>false</testFailureIgnore>
     <org.eclipse.swtbot.playback.delay>0</org.eclipse.swtbot.playback.delay>
     <test-argLine>-Dorg.eclipse.swtbot.playback.delay=${org.eclipse.swtbot.playback.delay} -Xms256m -Xmx1024m -XX:MaxPermSize=256m -Djava.net.preferIPv4Stack=true</test-argLine>
   </properties>
@@ -172,7 +171,6 @@
         <version>${tycho-version}</version>
         <configuration>
           <failIfNoTests>false</failIfNoTests>
-          <testFailureIgnore>${testFailureIgnore}</testFailureIgnore>
           <argLine>${test-argLine}</argLine>
           <appArgLine>-nl en</appArgLine>
           <dependencies>
@@ -257,9 +255,6 @@
   <profiles>
     <profile>
       <id>code-analysis</id>
-      <properties>
-        <testFailureIgnore>true</testFailureIgnore>
-      </properties>
       <build>
         <pluginManagement>
           <plugins>
