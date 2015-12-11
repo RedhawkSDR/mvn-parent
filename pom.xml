@@ -184,18 +184,6 @@
         <configuration>
           <failIfNoTests>false</failIfNoTests>
           <appArgLine>-nl en</appArgLine>
-          <dependencies>
-            <dependency>
-              <type>eclipse-feature</type>
-              <artifactId>org.jacorb</artifactId>
-              <version>0.0.0</version>
-            </dependency>
-            <dependency>
-              <type>eclipse-plugin</type>
-              <artifactId>org.eclipse.equinox.ds</artifactId>
-              <version>0.0.0</version>
-            </dependency>
-          </dependencies>
           <bundleStartLevel>
             <bundle>
               <id>org.eclipse.equinox.ds</id>
@@ -248,6 +236,20 @@
             </environment>
           </environments>
           <pomDependencies>consider</pomDependencies>
+          <dependency-resolution>
+            <extraRequirements>
+              <requirement>
+                <type>eclipse-plugin</type>
+                <id>org.jacorb</id>
+                <versionRange>0.0.0</versionRange>
+              </requirement>
+              <requirement>
+                <type>eclipse-plugin</type>
+                <id>org.eclipse.equinox.ds</id>
+                <versionRange>0.0.0</versionRange>
+              </requirement>
+            </extraRequirements>
+          </dependency-resolution>
         </configuration>
       </plugin>
     </plugins>
