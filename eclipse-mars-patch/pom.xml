@@ -23,6 +23,7 @@
     <module>org.eclipse.e4.rcp</module>
     <module>org.eclipse.rcp</module>
     <module>org.eclipse.platform</module>
+    <module>org.eclipse.sdk</module>
     <module>patch-repo</module>
   </modules>
 

@@ -49,6 +49,12 @@
       <version>4.5.3-SNAPSHOT</version>
       <type>eclipse-feature</type>
     </dependency>
+    <dependency>
+      <groupId>eclipse-neon-subset</groupId>
+      <artifactId>org.eclipse.sdk</artifactId>
+      <version>4.5.3-SNAPSHOT</version>
+      <type>eclipse-feature</type>
+    </dependency>
   </dependencies>
 
   <build>
@@ -129,6 +135,12 @@
                   <version>4.5.3-SNAPSHOT</version>
                   <type>eclipse-feature</type>
                   <classifier>sources-feature</classifier>
+                </artifactItem>
+                <artifactItem>
+                  <groupId>eclipse-neon-subset</groupId>
+                  <artifactId>org.eclipse.sdk</artifactId>
+                  <version>4.5.3-SNAPSHOT</version>
+                  <type>eclipse-feature</type>
                 </artifactItem>
               </artifactItems>
             </configuration>
