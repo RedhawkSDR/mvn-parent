@@ -6,7 +6,7 @@ This root of this repo contains the Maven parent POM used when building the REDH
 
 The repository contains other projects used to build some versions of the IDE. They are listed along with their applicable version(s). See the sub-directories for details.
 
-* eclipse-neon-swt (REDHAWK 2.0)
+* eclipse-mars-patch (REDHAWK 2.0)
 
 ## Building
 
