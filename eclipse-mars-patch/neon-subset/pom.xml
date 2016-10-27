@@ -115,6 +115,14 @@
               <id>org.eclipse.jface.text.source</id>
               <version>3.11.1.v20160819-1517</version>
             </iu>
+            <iu>
+              <id>org.eclipse.equinox.common</id>
+              <version>3.8.0.v20160509-1230</version>
+            </iu>
+            <iu>
+              <id>org.eclipse.equinox.common.source</id>
+              <version>3.8.0.v20160509-1230</version>
+            </iu>
           </ius>
           <source>
             <repository>

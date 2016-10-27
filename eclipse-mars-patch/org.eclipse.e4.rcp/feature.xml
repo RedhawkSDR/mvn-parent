@@ -216,9 +216,9 @@
 
    <plugin
          id="org.eclipse.equinox.common"
-         download-size="108"
-         install-size="206"
-         version="3.7.0.v20150402-1709"
+         download-size="117"
+         install-size="220"
+         version="3.8.0.v20160509-1230"
          unpack="false"/>
 
    <plugin
