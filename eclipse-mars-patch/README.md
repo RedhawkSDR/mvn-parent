@@ -6,10 +6,10 @@ The REDHAWK Explorer / IDE 2.0 series is based on Eclipse Mars which contains se
 
 The project executes as follows:
 1. `neon-subset` mirrors several bundles, their source, and their fragments from Eclipse Neon:
-  * `org.eclipse.swt`
-  * `org.eclipse.jface.text`
-  * `org.eclipse.equinox.common`
-2. Several Eclipse features are (re-)built. Their versions have been bumped at the service level (e.g 1.0.0 to 1.0.1), and the versions of the bundles they require have been adjusted for the bundles mentioned in the previous step.
+  * `org.eclipse.swt` (Neon)
+  * `org.eclipse.jface.text` (Neon SR1)
+  * `org.eclipse.equinox.common` (Neon SR1)
+2. Several Eclipse Mars features are rebuilt. The feature versions have been bumped at the service level (e.g 1.0.0 to 1.0.1), and the versions of the bundles they require have been adjusted to reference the bundles mentioned in the previous step.
   * `org.eclipse.e4.rcp`
   * `org.eclipse.rcp`
   * `org.eclipse.platform`

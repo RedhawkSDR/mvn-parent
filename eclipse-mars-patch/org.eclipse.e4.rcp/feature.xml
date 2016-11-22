@@ -516,7 +516,7 @@
          id="org.eclipse.swt"
          download-size="19"
          install-size="41"
-         version="3.105.1.v20160907-0248"
+         version="3.105.0.v20160603-0902"
          unpack="false"/>
 
    <plugin
@@ -526,7 +526,7 @@
          arch="x86"
          download-size="2801"
          install-size="5794"
-         version="3.105.1.v20160907-0248"
+         version="3.105.0.v20160603-0902"
          fragment="true"
          unpack="false"/>
 
@@ -537,7 +537,7 @@
          arch="x86_64"
          download-size="2804"
          install-size="5892"
-         version="3.105.1.v20160907-0248"
+         version="3.105.0.v20160603-0902"
          fragment="true"
          unpack="false"/>
 
@@ -548,7 +548,7 @@
          arch="x86"
          download-size="2554"
          install-size="5890"
-         version="3.105.1.v20160907-0248"
+         version="3.105.0.v20160603-0902"
          fragment="true"
          unpack="false"/>
 
@@ -559,7 +559,7 @@
          arch="s390x"
          download-size="2586"
          install-size="6283"
-         version="3.105.1.v20160907-0248"
+         version="3.105.0.v20160603-0902"
          fragment="true"
          unpack="false"/>
 
@@ -570,7 +570,7 @@
          arch="s390"
          download-size="2548"
          install-size="6068"
-         version="3.105.1.v20160907-0248"
+         version="3.105.0.v20160603-0902"
          fragment="true"
          unpack="false"/>
 
@@ -581,7 +581,7 @@
          arch="x86_64"
          download-size="2463"
          install-size="5747"
-         version="3.105.1.v20160907-0248"
+         version="3.105.0.v20160603-0902"
          fragment="true"
          unpack="false"/>
 
@@ -592,7 +592,7 @@
          arch="sparcv9"
          download-size="2517"
          install-size="5918"
-         version="3.105.1.v20160907-0248"
+         version="3.105.0.v20160603-0902"
          fragment="true"
          unpack="false"/>
 
@@ -603,7 +603,7 @@
          arch="ppc"
          download-size="2524"
          install-size="6127"
-         version="3.105.1.v20160907-0248"
+         version="3.105.0.v20160603-0902"
          fragment="true"
          unpack="false"/>
 
@@ -614,7 +614,7 @@
          arch="ppc64"
          download-size="2600"
          install-size="6764"
-         version="3.105.1.v20160907-0248"
+         version="3.105.0.v20160603-0902"
          fragment="true"
          unpack="false"/>
 
@@ -625,7 +625,7 @@
          arch="ppc64le"
          download-size="2567"
          install-size="6501"
-         version="3.105.1.v20160907-0248"
+         version="3.105.0.v20160603-0902"
          fragment="true"
          unpack="false"/>
 
@@ -636,7 +636,7 @@
          arch="x86_64"
          download-size="2701"
          install-size="6541"
-         version="3.105.1.v20160907-0248"
+         version="3.105.0.v20160603-0902"
          fragment="true"
          unpack="false"/>
 
@@ -647,7 +647,7 @@
          arch="x86_64"
          download-size="2398"
          install-size="5510"
-         version="3.105.1.v20160907-0248"
+         version="3.105.0.v20160603-0902"
          fragment="true"
          unpack="false"/>
 
@@ -658,7 +658,7 @@
          arch="ppc"
          download-size="2422"
          install-size="6013"
-         version="3.105.1.v20160907-0248"
+         version="3.105.0.v20160603-0902"
          fragment="true"
          unpack="false"/>
 
@@ -669,7 +669,7 @@
          arch="ppc64"
          download-size="2462"
          install-size="6208"
-         version="3.105.1.v20160907-0248"
+         version="3.105.0.v20160603-0902"
          fragment="true"
          unpack="false"/>
 
@@ -680,7 +680,7 @@
          arch="ia64"
          download-size="2488"
          install-size="6568"
-         version="3.105.1.v20160907-0248"
+         version="3.105.0.v20160603-0902"
          fragment="true"
          unpack="false"/>
 
