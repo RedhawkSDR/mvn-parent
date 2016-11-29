@@ -29,6 +29,7 @@
 
   <properties>
     <eclipse-mars>http://download.eclipse.org/releases/mars/</eclipse-mars>
+    <eclipse-mars-updates>http://download.eclipse.org/eclipse/updates/4.5</eclipse-mars-updates>
     <eclipse-neon>http://download.eclipse.org/releases/neon/</eclipse-neon>
     <tycho-version>0.26.0</tycho-version>
   </properties>

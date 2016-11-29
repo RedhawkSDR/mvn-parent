@@ -32,6 +32,12 @@
     </repository>
 
     <repository>
+      <id>eclipse-mars-updates</id>
+      <layout>p2</layout>
+      <url>${eclipse-mars-updates}</url>
+    </repository>
+
+    <repository>
       <id>eclipse-neon</id>
       <layout>p2</layout>
       <url>${eclipse-neon}</url>
