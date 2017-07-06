@@ -24,7 +24,7 @@
     <tycho-extras-version>${tycho-version}</tycho-extras-version>
     <checkstyle-config>http://download.redhawksdr.org/redhawk-checkstyle/checkstyle.xml</checkstyle-config>
     <org.eclipse.swtbot.playback.delay>0</org.eclipse.swtbot.playback.delay>
-    <tycho.testArgLine>-Dorg.eclipse.swtbot.playback.delay=${org.eclipse.swtbot.playback.delay} -Xms256m -Xmx1024m -XX:MaxPermSize=256m -Djava.net.preferIPv4Stack=true</tycho.testArgLine>
+    <tycho.testArgLine>-Dorg.eclipse.swtbot.playback.delay=${org.eclipse.swtbot.playback.delay} -Xms256m -Xmx1024m -Djava.net.preferIPv4Stack=true</tycho.testArgLine>
   </properties>
 
   <dependencies>
