@@ -20,7 +20,7 @@
   <properties>
     <buildType>SNAPSHOT</buildType>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    <tycho-version>1.0.0</tycho-version>
+    <tycho-version>1.1.0</tycho-version>
     <tycho-extras-version>${tycho-version}</tycho-extras-version>
     <checkstyle-config>http://download.redhawksdr.org/redhawk-checkstyle/checkstyle.xml</checkstyle-config>
     <org.eclipse.swtbot.playback.delay>0</org.eclipse.swtbot.playback.delay>
@@ -111,21 +111,16 @@
         <version>${tycho-version}</version>
         <executions>
           <execution>
-            <!-- Don't attach (default) metadata before the source-feature
-              execution. -->
-            <id>default-p2-metadata-default</id>
-            <configuration>
-              <attachP2Metadata>false</attachP2Metadata>
-            </configuration>
-          </execution>
-          <execution>
-            <id>attached-p2-metadata</id>
+            <id>p2-metadata</id>
             <phase>package</phase>
             <goals>
               <goal>p2-metadata</goal>
             </goals>
           </execution>
         </executions>
+        <configuration>
+          <defaultP2Metadata>false</defaultP2Metadata>
+        </configuration>
       </plugin>
 
       <plugin>
@@ -152,7 +147,7 @@
       <plugin>
         <groupId>org.jacoco</groupId>
         <artifactId>jacoco-maven-plugin</artifactId>
-        <version>0.7.5.201505241946</version>
+        <version>0.8.0</version>
         <executions>
           <execution>
             <configuration>
@@ -336,27 +331,16 @@
         </plugins>
       </build>
     </profile>
+
     <profile>
       <id>sign</id>
       <build>
-        <pluginManagement>
-          <plugins>
-            <plugin>
-              <groupId>org.apache.maven.plugins</groupId>
-              <artifactId>maven-jarsigner-plugin</artifactId>
-              <version>1.2</version>
-            </plugin>
-          </plugins>
-        </pluginManagement>
         <plugins>
           <plugin>
             <groupId>org.apache.maven.plugins</groupId>
             <artifactId>maven-jarsigner-plugin</artifactId>
+            <version>1.4</version>
             <configuration>
-              <arguments>
-                <argument>-digestalg</argument>
-                <argument>SHA1</argument>
-              </arguments>
               <keystore>${keystore}</keystore>
               <alias>${alias}</alias>
               <storepass>${storepass}</storepass>
